@@ -4,7 +4,7 @@ import User from "../models/User.js";
 import Order from "../models/Order.js";
 import Product from "../models/Product.js";
 import Category from "../models/Category.js";
-import { generateToken } from "../utils/generateToken.js";
+import { generateTokens } from "../utils/generateTokens.js";
 
 export const adminLogin = async (req, res, next) => {
   const errors = validationResult(req);
@@ -25,7 +25,7 @@ export const adminLogin = async (req, res, next) => {
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
-    const token = generateToken(user);
+    const token = generateTokens(user);
 
     res.json({
       token,

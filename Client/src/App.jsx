@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import PageShell from "./components/Layout/PageShell.jsx";
+import PageShell from "./components/PageShell.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import ProductsPage from "./pages/ProductsPage.jsx";
 import ProductDetailsPage from "./pages/ProductDetailsPage.jsx";

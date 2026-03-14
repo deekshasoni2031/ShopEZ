@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext.jsx";
+import { useAuth } from "../context/AuthContext.jsx";
 
 const linkBase =
   "relative px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:text-white hover:bg-white/5";
